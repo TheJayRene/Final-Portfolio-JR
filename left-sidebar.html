@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Left Sidebar - Strongly Typed by HTML5 UP</title>
@@ -62,6 +57,8 @@
 
 								
 								</div>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,39 +72,45 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      flex-direction: column;
+    }
+    header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
     .signup-container {
       background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
       width: 100%;
-      max-width: 400px;
+      max-width: 300px;
     }
     .signup-container h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
       text-align: center;
     }
     .form-group {
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
     .form-group label {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
     .form-group input {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.4rem;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 4px;
     }
     .signup-container button {
       width: 100%;
-      padding: 0.7rem;
+      padding: 0.6rem;
       background: #3498db;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
       cursor: pointer;
     }
     .signup-container button:hover {
@@ -116,26 +119,31 @@
   </style>
 </head>
 <body>
+  <header>Make It Jay Rene Sign Up!</header>
   <div class="signup-container">
     <h2>Create an Account</h2>
     <form>
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <label for="nickname">Nickname (optional)</label>
+        <input type="text" id="nickname" name="nickname">
+      </div>
+      <div class="form-group">
+        <label for="email">Gmail</label>
+        <input type="email" id="email" name="email" required pattern=".+@gmail\.com" title="Only Gmail addresses are allowed">
       </div>
       <button type="submit">Sign Up</button>
     </form>
   </div>
 </body>
-
+</html>
 			<!-- Footer -->
 				<section id="footer">
 					<div class="container">
